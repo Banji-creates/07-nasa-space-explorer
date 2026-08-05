@@ -238,6 +238,28 @@ button:hover {
   color: #666;
 }
 
+.random-fact {
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+  border: 1px solid #e6eef8;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  color: #0b3b5a;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.random-fact strong {
+  color: #0b6aa8;
+}
+
+.external-video-link {
+  display: inline-block;
+  margin: 12px 0;
+  color: #0066cc;
+}
+
 .placeholder-icon {
   font-size: 48px;
   margin-bottom: 20px;
