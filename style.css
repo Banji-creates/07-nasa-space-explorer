@@ -5,11 +5,21 @@
   padding: 0;
 }
 
+:root {
+  --nasa-blue: #0b3b5a;
+  --nasa-accent: #0b6aa8;
+  --nasa-red: #ce1126;
+  --bg: #f4f7fb;
+  --muted: #666666;
+  --card-bg: #ffffff;
+}
+
 /* Base page styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
+  font-family: 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg);
   padding: 20px;
+  color: var(--nasa-blue);
 }
 
 /* Centered container */
@@ -29,14 +39,14 @@ body {
 }
 
 h1 {
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  color: #212121;
+  font-weight: 700;
+  color: var(--nasa-blue);
+  letter-spacing: 0.6px;
 }
 
 /* Logo */
 .logo {
-  width: 140px;
+  width: 120px;
   margin-right: 15px;
 }
 
@@ -53,25 +63,27 @@ h1 {
 /* Inputs and buttons */
 input[type="date"],
 button {
-  font-family: Arial, sans-serif;
-  font-weight: normal;
-  color: #666;
+  font-family: 'Noto Sans', Arial, sans-serif;
+  font-weight: 400;
+  color: var(--muted);
   padding: 10px 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 1px solid #dfe9f4;
+  border-radius: 6px;
   font-size: 16px;
   line-height: 1.4;
   width: 100%;
+  background: var(--card-bg);
 }
 
 /* Button specific */
 button {
-  background-color: #d3d3d3;
-  color: black;
+  background-color: var(--nasa-accent);
+  color: white;
   cursor: pointer;
+  border: 1px solid rgba(0,0,0,0.06);
 }
 button:hover {
-  background-color: #bfbfbf;
+  background-color: var(--nasa-blue);
 }
 
 /* Stack horizontally on wider screens */
@@ -101,10 +113,10 @@ button:hover {
   flex: 1 1 100%;  /* full width by default */
   min-width: 280px;
   max-width: 500px;
-  background: white;
+  background: var(--card-bg);
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(11,59,90,0.06);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -155,7 +167,7 @@ button:hover {
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(10, 16, 34, 0.78);
+  background: rgba(3, 6, 23, 0.72);
   display: none;
   align-items: center;
   justify-content: center;
@@ -171,10 +183,10 @@ button:hover {
   position: relative;
   width: 100%;
   max-width: 900px;
-  background: white;
+  background: var(--card-bg);
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 10px 36px rgba(11,59,90,0.12);
   overflow: auto;
   max-height: 90vh;
 }
@@ -246,25 +258,25 @@ button:hover {
 }
 
 .random-fact {
-  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
-  border: 1px solid #e6eef8;
+  background: linear-gradient(180deg, #ffffff 0%, #eef7ff 100%);
+  border: 1px solid #dbeff9;
   padding: 14px 16px;
   border-radius: 10px;
   margin-bottom: 18px;
-  color: #0b3b5a;
+  color: var(--nasa-blue);
   display: flex;
   gap: 10px;
   align-items: baseline;
 }
 
 .random-fact strong {
-  color: #0b6aa8;
+  color: var(--nasa-accent);
 }
 
 .external-video-link {
   display: inline-block;
   margin: 12px 0;
-  color: #0066cc;
+  color: var(--nasa-accent);
 }
 
 .placeholder-icon {
