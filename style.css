@@ -178,6 +178,22 @@ button:hover {
   border-radius: 8px;
 }
 
+.modal-media {
+  width: 100%;
+}
+
+.modal-media img,
+.modal-media iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-media iframe {
+  height: 520px;
+  border: 0;
+}
+
 .modal-info {
   margin-top: 16px;
 }
